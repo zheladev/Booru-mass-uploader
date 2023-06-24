@@ -311,6 +311,7 @@ function SendFile(file, callback) {
     formData.append(boorus[current].fields.file, file);
     formData.append('filename', file.name);
 
+    console.log(formData)
     xhr.open('POST', upOptions.uploadURL);
     xhr.send(formData);
 }
